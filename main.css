@@ -54,9 +54,9 @@ body {
   height: 40px;
   padding-left: 16px;
   font-family: "Inter", sans-serif;
-  color: #757575;
-  font-size: 14px;
-  line-height: 16.94px;
+  color: #636060;
+  font-size: 18px;
+  line-height: 20.94px;
   font-weight: 400;
 }
 
@@ -109,9 +109,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 600;
 }
-.big-p {
-  line-height: 24px;
-}
+
 .yaratish {
   display: flex;
 }
@@ -138,7 +136,6 @@ body {
   border: none;
   width: 216px;
   padding: 12px 3px 8px 8px;
-  margin-bottom: 32px;
 }
 .baxo {
   display: flex;
@@ -220,6 +217,7 @@ body {
   right: 10px;
 }
 .arzon__div {
+  margin-bottom: 32px;
   position: relative;
 }
 .Eksklyuziv {
@@ -235,4 +233,112 @@ body {
   width: 73px;
   height: 21px;
   border-radius: 4px;
+}
+.big-p {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.big-p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #383a40;
+  transform-origin: bottom left;
+  transition: transform 0.45s ease-out;
+}
+.big-p:hover {
+  color: #1c1d20;
+}
+.big-p:hover::after {
+  transform: scaleX(1);
+  transform-origin: left left;
+}
+.yaratish:hover {
+  color: #151618;
+}
+.arzon__div {
+  transition: box-shadow 0.5s ease;
+  border-radius: 15px;
+}
+
+.arzon__div:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0.2, 0.2, 0.2);
+}
+.need {
+  border: none;
+
+  background-color: #f2f4f7;
+}
+.need__left {
+  display: flex;
+  align-items: center;
+  gap: 1.4px;
+}
+.need__small {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-right: 12px;
+}
+.need__rght {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.need__pushka {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16.5px 0px;
+  height: 24px;
+}
+.need__p {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #1f2026;
+  line-height: 14px;
+  font-size: 14px;
+}
+.need__p-2 {
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #1f2026;
+  line-height: 14px;
+  font-size: 14px;
+  border-bottom: 1px solid#1f2026;
+  padding-top: 1px;
+}
+.need__p-3 {
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #1f2026;
+  line-height: 14px;
+  font-size: 14px;
+}
+.need__p-4 {
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #595b66;
+  line-height: 14px;
+  font-size: 14px;
+}
+.need__p-5 {
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #595b66;
+  line-height: 14px;
+  font-size: 14px;
+}
+.need__p-6 {
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #7000ff;
+  line-height: 1px;
+  font-size: 15px;
 }

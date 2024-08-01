@@ -146,9 +146,9 @@ body {
 .arzon__div-2 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-top: 17.3px;
   margin-bottom: 10.4px;
+  justify-content: space-between;
 }
 .tanlov {
   font-size: 12.8px;
@@ -172,6 +172,8 @@ body {
   color: #1f1f26;
   background-color: yellow;
   padding: 2px 2px 0px 0px;
+  border: none;
+  border-radius: 6px;
 }
 .anarxi {
   font-size: 11.2px;
@@ -190,7 +192,7 @@ body {
 .arzon__big-div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 17px;
   flex-wrap: wrap;
 }
 .oxirgi-btn {
@@ -221,8 +223,8 @@ body {
   position: relative;
 }
 .Eksklyuziv {
-  top: 289px;
-  left: 0;
+  top: 283px;
+  left: 1px;
   position: absolute;
   font-weight: 500;
   font-size: 13px;
@@ -268,7 +270,7 @@ body {
 }
 
 .arzon__div:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0.2, 0.2, 0.2);
+  box-shadow: 0 1px 8px 0.3px rgba(14, 17, 19, 0.1);
 }
 .need {
   border: none;
@@ -359,4 +361,21 @@ body {
 .hammasi__h2,
 .arzon__div {
   cursor: pointer;
+}
+.image-container {
+  width: 234px;
+  height: 305px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mahsulot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 15px;
+}
+.mahsulot:hover {
+  transform: scale(1.05);
 }

@@ -7,6 +7,9 @@
   width: 1240px;
   margin: 0 auto;
 }
+ul {
+  list-style: none;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -146,7 +149,7 @@ body {
 .arzon__div-2 {
   display: flex;
   align-items: center;
-  margin-top: 17.3px;
+  margin-top: 17px;
   margin-bottom: 10.4px;
   justify-content: space-between;
 }
@@ -165,13 +168,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 .yulov {
-  width: 95.57px;
+  width: max-content;
   text-align: center;
   font-size: 11px;
   line-height: 17px;
   color: #1f1f26;
   background-color: yellow;
-  padding: 2px 2px 0px 0px;
+  padding: 1px 2px;
   border: none;
   border-radius: 6px;
 }
@@ -208,6 +211,7 @@ body {
   background-color: #f2f4f7;
   margin-left: 250px;
   margin-top: 6.9px;
+  cursor: pointer;
 }
 .oxirgi-btn:hover {
   background-color: #c6cbd3;
@@ -370,12 +374,103 @@ body {
 }
 
 .mahsulot {
-  width: 100%;
-  height: 100%;
+  width: 232px;
+  height: 309.33px;
   object-fit: cover;
   transition: transform 0.5s ease;
   border-radius: 15px;
 }
 .mahsulot:hover {
+  transform: scale(1.05);
+}
+.banner {
+  width: 1240px;
+  height: 413.03px;
+  border-radius: 15px;
+}
+.btn-banner {
+  position: absolute;
+  top: 186.51px;
+  right: 16px;
+  cursor: pointer;
+}
+.btn-banner-2 {
+  position: absolute;
+  top: 186.51px;
+  left: 16px;
+  cursor: pointer;
+}
+.relativ {
+  position: relative;
+}
+.bannner-2 {
+  margin-top: 50px;
+}
+.futr {
+  display: flex;
+}
+.futr-nav {
+  border: none;
+  width: 310px;
+  height: 206.4px;
+}
+.futr-list-big {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #1f2026;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.futr-list {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 19px;
+  cursor: pointer;
+}
+.apple {
+  width: 24px;
+  height: 24px;
+}
+.futr-list-1 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.link-2 {
+  display: flex;
+  align-items: center;
+  gap: 2.8px;
+}
+.insta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.insta-2 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #1f2026;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.futr {
+  display: flex;
+}
+.btn-div {
+  margin-bottom: 62px;
+}
+.bannner-2 {
+  width: 1240px;
+  height: 413.33px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+
+  border-radius: 15px;
+}
+.bannner-2:hover {
   transform: scale(1.05);
 }

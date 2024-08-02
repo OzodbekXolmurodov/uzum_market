@@ -1,32 +1,9 @@
-const findElement = (element, parent = document) => {
-  return parent.querySelector(element);
-};
+import { findElement } from "./helpirs.js";
+import { products } from "./html.js";
 
 const elWrapperProducts = findElement(".arzon__big-div");
 const elProductTemplate = findElement("#template");
 
-const products = [
-  {
-    id: 1,
-    img: "imgs/t_product_540_high.jpg (2).png",
-    isLaked: false,
-    title: "prodact",
-    reting: "4",
-    real_price: "1234",
-    discount_pricd: "123",
-    monthly_payment: "2e2132",
-  },
-  {
-    id: 2,
-    img: "imgs/t_product_540_high.jpg (2).png",
-    isLaked: false,
-    title: "prodact",
-    reting: "4",
-    real_price: "1234",
-    discount_pricd: "123",
-    monthly_payment: "112334",
-  },
-];
 function renderProducts(list = products, parent = elWrapperProducts) {
   parent.textContent = null;
   list.forEach((product) => {

@@ -28,14 +28,9 @@ function createProduct(data) {
     const card = document.createElement("div");
     card.className = "arzon__div";
 
-    const productImage =
-      product.images && product.images.length
-        ? product.images[0]
-        : "imgs/placeholder-image.svg";
-
     card.innerHTML = `
       <div class="image-container">
-          <img class="mahsulot" src="${productImage}" alt="${product.title}" />
+          <img class="mahsulot" src="${product.images[0]}" alt="${product.title}" />
       </div>
       <div class="tarif">
         <p class="tanlov">${product.title}</p>
@@ -101,6 +96,11 @@ onload = function () {
     "https://images.uzum.uz/cs4db9mo5c8cka40d080/main_page_banner.jpg",
     "https://images.uzum.uz/crs0p33i153t30una9sg/main_page_banner.jpg",
     "https://images.uzum.uz/crtc9rc0u44g6jops5ug/main_page_banner.jpg",
+    "https://images.uzum.uz/crpusrqjot51rkb2uh10/main_page_banner.jpg",
+    "https://images.uzum.uz/crpusrqjot51rkb2uh10/main_page_banner.jpg",
+    "https://images.uzum.uz/crtc8ss0u44g6jops5j0/main_page_banner.jpg",
+    "https://images.uzum.uz/crna6aevip07shn5h370/main_page_banner.jpg",
+    "https://images.uzum.uz/cs57bb6o5c8cka40iiig/main_page_banner.jpg",
   ];
   let result = 0;
 

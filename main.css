@@ -477,7 +477,6 @@ body {
   transform: scale(1.05);
 }
 .lds-ellipsis {
-  /* change color here */
   color: #674ee4;
 }
 .lds-ellipsis,

@@ -24,7 +24,6 @@ body {
   gap: 30px;
 }
 
-/* Product image styling */
 .content img {
   width: 400px;
   height: auto;
@@ -38,7 +37,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Product details */
 .details h1 {
   font-size: 2.5rem;
   color: #333;
@@ -58,7 +56,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* Buy now button styling */
 .buy-now {
   padding: 10px 20px;
   font-size: 1.2rem;

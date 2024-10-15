@@ -24,13 +24,17 @@ async function getData(endpoint, count) {
 getData("products", offset);
 
 function createProduct(data) {
+  while (wrapper.firstChild) {
+    wrapper.firstChild.remove();
+  }
   data.products.forEach((product) => {
     const card = document.createElement("div");
+    card.dataset.id = product.id;
     card.className = "arzon__div";
 
     card.innerHTML = `
       <div class="image-container">
-          <img class="mahsulot" src="${product.images[0]}" alt="${product.title}" />
+          <img data-id=${product.id} class="mahsulot" src="${product.images[0]}" alt="${product.title}" />
       </div>
       <div class="tarif">
         <p class="tanlov">${product.title}</p>
@@ -114,3 +118,12 @@ onload = function () {
 
   setInterval(changeImage, 5000);
 };
+
+wrapper.addEventListener("click", (event) => {
+  if (event.target.className === "mahsulot") {
+    let id = event.target.closest(".arzon__div").dataset.id;
+    open(`/pegs/prodaks.html?q=${id}`, "_self");
+    console.log(id);
+  }
+  console.log();
+});

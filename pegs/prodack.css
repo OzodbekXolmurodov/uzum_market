@@ -1,4 +1,3 @@
-/* Body style with gradient background */
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   color: #333;
 }
 
-/* Container styling */
 .content {
   display: flex;
   justify-content: center;
